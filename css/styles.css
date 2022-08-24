@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: 
+                        "header header menu"
+                        "contenido contenido contenido"
+                        "pic pic pic"
+                        "footer footer footer";
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    font-family: 'Calistoga', cursive;
+    background-color: #57cc99;
+    border-radius: .2cm;
+    height: 75px; 
+}
+
+.grid-header{
+    grid-area: "header";
+}
+
+.grid-menu{
+    grid-area: "menu"
+}
+
+.header{
+    font-size: 30px;
+} 
+
+nav ul{
+    list-style: none;
+;
+}
+
+nav ul li{ 
+    display: inline;
+    padding: 0px 3px;
+    font-size: 15px;
+}
+
+.bienvenida{
+    grid-area: "contenido";
+    box-sizing: border-box;
+}
+
+.titulo{
+    color: black;
+    text-align: center;
+    padding:30px 0;
+    font-family: 'Calistoga', cursive;
+    font-size: 40px;
+}
+
+.texto{
+
+    padding-bottom: 20px;
+}
+
+.medio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: #34435E; */
+    border-radius: .2cm;
+    grid-area: "pic"
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.fotos{
+    width: 350px;
+    height: 300px;
+    margin-left: 5px;
+    border-radius: 0.2cm;
+    padding: 10px 0px;
+}
+
+footer{
+    position: absolute;
+    bottom:10px;
+    right:20px;
+    grid-area: "footer";
+}
+
+/* Media Querie para Celulares */
+
+@media screen and (min-width:370px) and (max-width:480px) {
+    body{
+        display: grid;
+        box-sizing: border-box;
+    }
+    nav ul li{
+        flex-direction: column;
+        display: block;
+    }
+    .header{
+        font-size: 30px;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+    .fotos{
+        width: 300px;
+        height: 250px;
+        padding: 0;
+        margin: 0;
+        opacity: 0.7;
+    }
+    .fotos:hover{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    .medio{
+        flex-direction: column;
+    }
+    .btn{
+        display: none;
+    }
+}
