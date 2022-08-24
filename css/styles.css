@@ -95,6 +95,34 @@ footer{
     grid-area: "footer";
 }
 
+.nosotros_body{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: 
+                        "header header menu"
+                        "contenido contenido contenido"
+                        "parrafo parrago fotos"
+                        "footer footer footer";
+}
+
+.nosotros_contenido{
+    grid-area: "contenido";
+}
+
+.nosotros_parrafo{
+    grid-area: "parrafo";
+}
+
+.nosotros_fotos{
+    grid-area: "fotos";
+}
+
+
+
+
+
+
+
 /* Media Querie para Celulares */
 
 @media screen and (min-width:370px) and (max-width:480px) {
