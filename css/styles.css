@@ -3,47 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-areas: 
-                        "header header menu"
-                        "contenido contenido contenido"
-                        "pic pic pic"
-                        "footer footer footer";
-}
+
 nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row nowrap;
     font-family: 'Calistoga', cursive;
     background-color: #57cc99;
-    border-radius: .2cm;
-    height: 75px; 
-}
-
-.grid-header{
-    grid-area: "header";
-}
-
-.grid-menu{
-    grid-area: "menu"
-}
-
-.header{
-    font-size: 30px;
-} 
-
-nav ul{
-    list-style: none;
-;
-}
-
-nav ul li{ 
-    display: inline;
-    padding: 0px 3px;
-    font-size: 15px;
 }
 
 .bienvenida{
@@ -60,32 +24,20 @@ nav ul li{
 }
 
 .texto{
-
     padding-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .medio{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    /* background-color: #34435E; */
-    border-radius: .2cm;
-    grid-area: "pic"
-}
-
-.btn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 5px;
 }
 
 .fotos{
-    width: 350px;
-    height: 300px;
-    margin-left: 5px;
-    border-radius: 0.2cm;
-    padding: 10px 0px;
+    width: 600px;
+    height: 520px;
+    border-radius: .2cm;
 }
 
 footer{
@@ -116,6 +68,11 @@ footer{
 .nosotros_fotos{
     grid-area: "fotos";
 }
+
+/* .carousel-item{
+    width: 650px;
+    height: 800px;
+} */
 
 
 
