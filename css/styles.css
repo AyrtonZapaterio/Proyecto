@@ -47,6 +47,7 @@ footer{
     grid-area: "footer";
 }
 
+<<<<<<< HEAD
 .nosotros_body{
     display: grid;
     grid-auto-flow: column;
@@ -80,6 +81,8 @@ footer{
 
 
 
+=======
+>>>>>>> parent of 958af3c (Entrega githud)
 /* Media Querie para Celulares */
 
 @media screen and (min-width:370px) and (max-width:480px) {
